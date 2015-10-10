@@ -1,0 +1,17 @@
+//
+//  QBHostestApiManager.h
+//  糗百
+//
+//  Created by kehwa on 15/9/30.
+//  Copyright © 2015年 kehwa. All rights reserved.
+//
+
+#import "QBAPIBaseManager.h"
+
+@interface QBHostestApiManager : QBAPIBaseManager<QBAPIManager , QBAPIManagerValidator>
+
+@property (nonatomic , assign)BOOL isFirstPage;
+
+- (void)loadNewPage;
+- (void)loadNextPage;
+@end
